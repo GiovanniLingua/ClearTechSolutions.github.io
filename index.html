@@ -3,131 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClearTech Solutions | Professional IT Services & Web Development</title>
-    <meta name="description" content="South Africa's trusted IT partner offering 24/7 support, cybersecurity, cloud solutions, and custom web development.">
-    <meta name="keywords" content="IT support Johannesburg, web development South Africa, cybersecurity services, managed IT solutions">
+    <title>Clear Tech Solutions | IT Support & Services</title>
+    <meta name="description" content="Professional IT support, cybersecurity, and cloud solutions for businesses in South Africa. Reliable IT services with 24/7 support.">
+    <meta name="keywords" content="IT support, cybersecurity, cloud solutions, IT services, network cabling, IT maintenance">
+    
     <style>
         :root {
-            --primary: #2962ff;
-            --dark: #0d47a1;
-            --light: #bbdefb;
+            --primary: #165ea8;
+            --secondary: #1da6b8;
+            --dark: #123d66;
+            --light: #f8f9fa;
         }
+        
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Raleway', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
+            margin: 0;
             padding: 0;
         }
+        
         header {
-            background: var(--primary);
+            background-color: var(--primary);
             color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        .logo-container {
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        nav ul {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
+            list-style: none;
+            padding: 0;
         }
-        .logo {
-            height: 80px;
+        
+        nav ul li {
+            margin-left: 2rem;
         }
-        nav {
-            background: var(--dark);
-            padding: 1rem;
-        }
-        nav a {
+        
+        nav ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
+            font-weight: 600;
         }
+        
         .hero {
-            background: var(--light);
-            padding: 3rem 1rem;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cjn.co.za/wp-content/uploads/2024/08/SL_101619_24150_18.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
             text-align: center;
+            color: white;
+            margin-top: 80px;
         }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
         .services {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+        
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 2rem;
+            gap: 2rem;
         }
+        
         .service-card {
-            border: 1px solid #ddd;
+            background: white;
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
+        
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        footer {
-            background: #333;
+        
+        .service-card img {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        .cta {
+            background-color: var(--primary);
             color: white;
+            padding: 4rem 0;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
         }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
         @media (max-width: 768px) {
-            .services {
-                grid-template-columns: 1fr;
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="CTSLOGO.png" alt="ClearTech Solutions Logo" class="logo">
-            <h1>ClearTech Solutions</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="CTSLOGO.png" alt="Clear Tech Solutions Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <section class="hero">
-        <h2>Your Trusted IT Partner in South Africa</h2>
-        <p>24/7 IT Support | Cybersecurity Solutions | Custom Web Development</p>
-    </section>
-    
-    <section id="services" class="services">
-        <div class="service-card">
-            <h3>IT Support</h3>
-            <p>24/7 technical support and maintenance for businesses of all sizes.</p>
-        </div>
-        <div class="service-card">
-            <h3>Web Development</h3>
-            <p>Custom websites and web applications tailored to your needs.</p>
-        </div>
-        <div class="service-card">
-            <h3>Cybersecurity</h3>
-            <p>Comprehensive protection against digital threats and data breaches.</p>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Clear Tech Solutions</h1>
+                <p>Professional IT Support & Services</p>
+                <p>Cost-effective, efficient, and reliable IT solutions for your business</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
         </div>
     </section>
-    
-    <section id="about" style="padding: 2rem;">
-        <h2>About ClearTech Solutions</h2>
-        <p>Founded in Johannesburg, we provide cutting-edge IT solutions to businesses across South Africa. Our team of certified professionals delivers reliable, secure, and scalable technology services.</p>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our IT Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="it-support-icon.png" alt="IT Support">
+                    <h3>IT Support</h3>
+                    <p>24/7 technical support and maintenance for businesses of all sizes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="cloud-icon.png" alt="Cloud Services">
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure and scalable cloud services to power your business.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="network-icon.png" alt="Network Services">
+                    <h3>Network Services</h3>
+                    <p>Reliable network design, implementation, and maintenance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="backup-icon.png" alt="Backup Solutions">
+                    <h3>Backup Solutions</h3>
+                    <p>Protect your critical business data with our robust backup systems.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="security-icon.png" alt="Cybersecurity">
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive protection against digital threats and data breaches.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="outsourcing-icon.png" alt="IT Outsourcing">
+                    <h3>IT Outsourcing</h3>
+                    <p>Focus on your business while we manage your IT infrastructure.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact" style="padding: 2rem; background: #f5f5f5;">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:cleartechsolutions@outlook.com">cleartechsolutions@outlook.com</a></p>
-        <p>Phone: <a href="tel:+27691598580">+27 69 159 8580</a></p>
-        <p>Operating Hours: Mon-Fri 8:00-17:00 | Emergency Support 24/7</p>
+
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your IT?</h2>
+            <p>Contact us today for a free consultation and quote.</p>
+            <div class="contact-info">
+                <p>Phone: +27 69 159 8580</p>
+                <p>Email: cleartechsolutions@outlook.com</p>
+                <p>Address: Your Business Address Here</p>
+            </div>
+            <a href="mailto:cleartechsolutions@outlook.com" class="btn">Email Us</a>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2023 ClearTech Solutions. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Clear Tech Solutions. All rights reserved.</p>
+            <p>Professional IT Services for South African Businesses</p>
+        </div>
     </footer>
 </body>
 </html>
